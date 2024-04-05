@@ -1,0 +1,109 @@
+{
+    "teams": [
+        {
+            "Name": "Team A",
+            "MatchesPlayed": 5,
+            "Wins": 3,
+            "Losses": 2,
+            "Points": 15
+        },
+        {
+            "Name": "Team B",
+            "MatchesPlayed": 4,
+            "Wins": 2,
+            "Losses": 2,
+            "Points": 10
+        },
+        {
+            "Name": "Team C",
+            "MatchesPlayed": 6,
+            "Wins": 4,
+            "Losses": 2,
+            "Points": 20
+        },
+        {
+            "Name": "Team D",
+            "MatchesPlayed": 5,
+            "Wins": 1,
+            "Losses": 4,
+            "Points": 5
+        },
+        {
+            "Name": "Team E",
+            "MatchesPlayed": 4,
+            "Wins": 3,
+            "Losses": 1,
+            "Points": 15
+        },
+        {
+            "Name": "Team F",
+            "MatchesPlayed": 7,
+            "Wins": 5,
+            "Losses": 2,
+            "Points": 25
+        },
+        {
+            "Name": "Team G",
+            "MatchesPlayed": 4,
+            "Wins": 2,
+            "Losses": 2,
+            "Points": 10
+        },
+        {
+            "Name": "Team H",
+            "MatchesPlayed": 6,
+            "Wins": 4,
+            "Losses": 2,
+            "Points": 20
+        },
+        {
+            "Name": "Team I",
+            "MatchesPlayed": 5,
+            "Wins": 1,
+            "Losses": 4,
+            "Points": 5
+        },
+        {
+            "Name": "Team J",
+            "MatchesPlayed": 4,
+            "Wins": 3,
+            "Losses": 1,
+            "Points": 15
+        },
+        {
+            "Name": "Team K",
+            "MatchesPlayed": 7,
+            "Wins": 5,
+            "Losses": 2,
+            "Points": 25
+        },
+        {
+            "Name": "Team L",
+            "MatchesPlayed": 4,
+            "Wins": 2,
+            "Losses": 2,
+            "Points": 10
+        },
+        {
+            "Name": "Team M",
+            "MatchesPlayed": 6,
+            "Wins": 4,
+            "Losses": 2,
+            "Points": 20
+        },
+        {
+            "Name": "Team N",
+            "MatchesPlayed": 5,
+            "Wins": 1,
+            "Losses": 4,
+            "Points": 5
+        },
+        {
+            "Name": "Team O",
+            "MatchesPlayed": 4,
+            "Wins": 3,
+            "Losses": 1,
+            "Points": 15
+        }
+    ]
+}

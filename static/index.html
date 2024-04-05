@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Tournament Dashboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dashboard-section {
+        margin-bottom: 30px;
+    }
+    .section-heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .api-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .api-button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Cricket Tournament Dashboard</h1>
+        
+        <div class="dashboard-section">
+            <h2 class="section-heading">Top 10 Players by Wickets</h2>
+            <button class="api-button" id="wickets-api">Get Top Players by Wickets</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="section-heading">Top 10 Players by Runs</h2>
+            <button class="api-button" id="runs-api">Get Top Players by Runs</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="section-heading">Top 10 Players by Value</h2>
+            <button class="api-button" id="value-api">Get Top Players by Value</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="section-heading">List of Teams</h2>
+            <button class="api-button" id="teams-api">Get List of Teams</button>
+        </div>
+    </div>
+
+    <script>
+        // Add event listeners to the buttons to trigger API requests
+        document.getElementById("wickets-api").addEventListener("click", function() {
+            window.location.href = "/top-players-by-wickets";
+        });
+
+        document.getElementById("runs-api").addEventListener("click", function() {
+            window.location.href = "/top-players-by-runs";
+        });
+
+        document.getElementById("value-api").addEventListener("click", function() {
+            window.location.href = "/top-players-by-value";
+        });
+
+        document.getElementById("teams-api").addEventListener("click", function() {
+            window.location.href = "/teams";
+        });
+    </script>
+</body>
+</html>
