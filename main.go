@@ -91,27 +91,32 @@ func main() {
 	// Routing
 	r.GET("/top-players-by-wickets", func(c *gin.Context) {
 		sortByWickets(playerData.Players)
-		c.HTML(http.StatusOK, "base.html", gin.H{
+		c.HTML(http.StatusOK, "wickets.html", gin.H{
 			"Player": playerData.Players[:10], // Pass top 10 players
 		})
 	})
 
 	r.GET("/top-players-by-runs", func(c *gin.Context) {
 		sortByRuns(playerData.Players)
-		c.JSON(200, playerData.Players[:10])
+		c.HTML(http.StatusOK, "runs.html", gin.H{
+			"Player": playerData.Players[:10], // Pass top 10 players
+		})
 
 	})
 
 	r.GET("/top-players-by-value", func(c *gin.Context) {
 		sortByValue(playerData.Players)
-		c.JSON(200, playerData.Players[:10])
+		c.HTML(http.StatusOK, "value.html", gin.H{
+			"Player": playerData.Players[:10], // Pass top 10 players
+		})
 	})
-
 	r.GET("/teams", func(c *gin.Context) {
 		sort.Slice(teamData.Teams, func(i, j int) bool {
 			return teamData.Teams[i].Points > teamData.Teams[j].Points
 		})
-		c.JSON(200, teamData.Teams)
+		c.HTML(http.StatusOK, "teams.html", gin.H{
+			"Teams": teamData.Teams[:10], // Pass top 10 players
+		})
 	})
 
 	// Run the server

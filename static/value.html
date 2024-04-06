@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Tournament Dashboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <h1>Cricket Tournament Dashboard</h1>
+    <h2>Top 10 Players by Value</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Wickets</th>
+            <th>Runs</th>
+            <th>Catches</th>
+            <th>Man of Match Awards</th>
+        </tr>
+        {{range .Player}}
+        <tr>
+            <td>{{.Name}}</td>
+            <td>{{.Wickets}}</td>
+            <td>{{.Runs}}</td>
+            <td>{{.Catches}}</td>
+            <td>{{.ManOfMatchesAwards}}</td>
+        </tr>
+        {{end}}
+    </table>
+</body>
+</html>
